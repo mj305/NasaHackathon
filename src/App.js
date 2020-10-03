@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
+      <h1>Map Title</h1>
       <MainMap />
     </div>
   );
