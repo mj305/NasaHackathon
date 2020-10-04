@@ -1,8 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import MainMap from './components/MainMap';
-import Banner from './components/Banner';
+import MainMap from "./components/MainMap";
+
+import Banner from "./components/Banner";
 
 function App() {
   return (
