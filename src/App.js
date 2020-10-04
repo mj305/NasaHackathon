@@ -1,17 +1,23 @@
-import React from "react";
-import "./App.css";
+import React, { useState } from "react";
+import ReactTooltip from "react-tooltip";
 
-import MainMap from "./components/MainMap";
-
-import Banner from "./components/Banner";
+import MapChart from "./components/MapChart";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
+  const [content, setContent] = useState("");
+
   return (
-    <div className="App">
-      <Banner />
-      <h1>Map Title</h1>
-      <MainMap />
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        <h1>FLOOD OF IDEAS</h1>
+        <MapChart setTooltipContent={setContent} />
+        <ReactTooltip>{content}</ReactTooltip>
+      </div>
+      <Footer />
+    </>
   );
 }
 
