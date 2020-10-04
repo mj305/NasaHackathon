@@ -1,0 +1,40 @@
+.row {
+  height: 50vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-1, 0.8),
+      rgba($color-primary-4, 0.8)
+    ),
+    url("../../assets/milkyWay.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+
+  color: white;
+  font-size: 2rem;
+  max-width: 95vw;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    padding: 2rem;
+    background-color: orangered;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+}
+
+.footer {
+  width: 100vw;
+  height: 50vh;
+}

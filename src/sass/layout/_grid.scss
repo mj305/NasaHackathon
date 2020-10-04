@@ -1,0 +1,3 @@
+.col-1-of-4 {
+  width: calc((100% - 5 * #{$gutter-horizontal}) / 6);
+}
