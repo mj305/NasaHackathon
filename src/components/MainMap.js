@@ -1,7 +1,8 @@
 import React, { Component, useState } from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
+import L, { map } from 'leaflet';
 import * as parkData from "../data/skateboard-parks.json";
+import * as waterLevelData from "../data/water.json";
 
 function MainMap() {
     const [activePoint, setActivePoint] = useState(null);
@@ -26,34 +27,40 @@ function MainMap() {
 
     return (
       <div className="row">
-        <div className="col s4">
-            <h3>Flood Risk Visualiser</h3>
-            {!activePoint && <p>Click on pointer to get more information</p> }
+        <div className="col s4 left-align">
+            <h3 className="center-align">Flood Risk Visualiser</h3>
+            {!activePoint && <p className="center-align">Click on pointer to get more information</p> }
             {activePoint && (
             <div>
-              <h4>Name: {activePoint.properties.NAME}</h4>
-              <h6>ID: {activePoint.properties.PARK_ID}</h6>
-              <p>Description: {activePoint.properties.DESCRIPTIO}</p>
+              <h4>Name: {activePoint.properties.label}</h4>
+              <h6>ID: {activePoint.properties.RLOIid}</h6>
+              <p>Coordinates: {activePoint.properties.lat}, {activePoint.properties.long}</p>
+              {activePoint.properties.stageScale && activePoint.properties.stageScale.highestRecent && <p>Highest Recent: {activePoint.properties.stageScale.highestRecent.value}</p> }
+              {activePoint.properties.stageScale && activePoint.properties.stageScale.highestRecent && <p>Date: {activePoint.properties.stageScale.highestRecent.dateTime}</p> }
             </div>
             )}
         </div>
         <div className="col s8">
-          <Map center={[37.9, -95.0]} zoom={4} scrollWheelZoom={false}>
+          <Map center={[56, 0]} zoom={6} scrollWheelZoom={false}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           />
-          {parkData.features.map(park => (
+          {waterLevelData.features
+            .filter(item => item.properties.stageScale !== undefined)
+            .filter(item => item.properties.stageScale.highestRecent !== undefined)
+            .map(spot => {
+            return (
             <Marker
-              icon={park.properties.DANGER_LEVEL === "HIGH" ? dangerIcon : normalIcon}
-              key={park.properties.PARK_ID}
+              icon={spot.properties.stageScale.highestRecent.value > 3 ? dangerIcon : normalIcon}
+              key={spot.properties.RLOIid}
               position={[
-                park.geometry.coordinates[1],
-                park.geometry.coordinates[0]
+                spot.properties.lat,
+                spot.properties.long
               ]}
-              onclick={() => setActivePoint(park)}
+              onclick={() => setActivePoint(spot)}
             />
-          ))}
+            )})}
           </Map>
         </div>
       </div>
