@@ -12,10 +12,10 @@
   }
 
   &__map-box {
-    width: 60%;
-    height: 50%;
+    width: 50%;
+    height: 30%;
     text-align: center;
     margin: 5rem auto 5rem auto;
-    border: #032380 solid 0.2rem;
+    border: $color-primary-5 solid 0.2rem;
   }
 }
