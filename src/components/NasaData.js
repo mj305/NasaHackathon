@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
 import * as waterLevelData from "../data/water.json";
 

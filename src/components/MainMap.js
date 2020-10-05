@@ -6,19 +6,19 @@ import {
   Geography,
 } from "react-simple-maps";
 
+import * as waterLevelData from "../data/water.json";
+
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = ({ setTooltipContent }) => {
-  /*   const results = waterLevelData.features.map((value) => {
+  const result = waterLevelData.features.map((value) => {
     return (
       <>
-        <div>
-          <p> {value.label} </p>
-        </div>
+        <div> {value.properties.catchmentName} </div>
       </>
     );
-  }); */
+  });
 
   return (
     <>
@@ -45,8 +45,11 @@ const MapChart = ({ setTooltipContent }) => {
                     key={geo.rsmKey}
                     geography={geo}
                     onMouseEnter={() => {
-                      const { NAME } = geo.properties;
-                      setTooltipContent(`${NAME}`);
+                      setTooltipContent(
+                        <>
+                          <p>{result}</p>
+                        </>
+                      );
                     }}
                     onMouseLeave={() => {
                       setTooltipContent("");
