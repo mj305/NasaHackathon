@@ -1,4 +1,5 @@
-.row {
+.footer {
+  width: 100vw;
   height: 50vh;
   background-image: linear-gradient(
       to right bottom,
@@ -6,12 +7,10 @@
       rgba($color-primary-4, 0.8)
     ),
     url("../../assets/milkyWay.jpg");
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  position: relative;
-
+  position: absolute;
   color: white;
   font-size: 2rem;
   max-width: 95vw;
@@ -25,7 +24,6 @@
 
   [class^="col-"] {
     padding: 2rem;
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
@@ -34,7 +32,8 @@
   }
 }
 
-.footer {
-  width: 100vw;
-  height: 50vh;
+.row {
+  text-align: center;
+  position: relative;
+  padding-top: 9%;
 }

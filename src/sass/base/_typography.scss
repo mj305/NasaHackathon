@@ -15,16 +15,16 @@ body {
 
   &--main {
     display: block;
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-
     animation: moveInLeft 1s ease-out;
+    margin: 0.5rem;
   }
 
   &--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
 
