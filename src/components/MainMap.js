@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import React, { memo } from "react";
 import {
   ZoomableGroup,
   ComposableMap,
@@ -6,15 +6,11 @@ import {
   Geography,
 } from "react-simple-maps";
 
-import * as waterLevelData from "../data/water.json";
-
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = ({ setTooltipContent }) => {
-  const [country, setCountry] = useState({});
-
-  const results = waterLevelData.features.map((value) => {
+  /*   const results = waterLevelData.features.map((value) => {
     return (
       <>
         <div>
@@ -22,7 +18,7 @@ const MapChart = ({ setTooltipContent }) => {
         </div>
       </>
     );
-  });
+  }); */
 
   return (
     <>
@@ -49,11 +45,8 @@ const MapChart = ({ setTooltipContent }) => {
                     key={geo.rsmKey}
                     geography={geo}
                     onMouseEnter={() => {
-                      setTooltipContent(
-                        <>
-                          <p> {results} </p>
-                        </>
-                      );
+                      const { NAME } = geo.properties;
+                      setTooltipContent(`${NAME}`);
                     }}
                     onMouseLeave={() => {
                       setTooltipContent("");

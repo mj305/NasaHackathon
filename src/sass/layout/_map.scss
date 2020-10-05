@@ -1,6 +1,5 @@
 .map {
   text-align: center;
-
   &__map-header {
     font-size: 2.5rem;
     font-weight: 800;
@@ -9,6 +8,8 @@
   &__map-paragraph {
     font-size: 1.7rem;
     margin-top: 5rem;
+    width: 70%;
+    margin: 5rem auto 5rem auto;
   }
 
   &__map-box {
