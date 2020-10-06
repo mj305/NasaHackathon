@@ -11,17 +11,7 @@ const Header = () => {
         </h1>
 
         <div className="row">
-          <div className="col-1-of-3">
-            <a
-              href="https://twitter.com/coast_buster"
-              target="blank"
-              className="btn btn--white btn--animated"
-            >
-              Twitter
-              <i className="fa fa-twitter"></i>
-            </a>
-          </div>
-          <div className="col-1-of-3">
+          <div className="col-1-of-2">
             <a
               href="https://github.com/mj305/NasaHackathon"
               target="blank"
@@ -32,7 +22,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="project col-1-of-3">
+          <div className="project col-1-of-2">
             <a
               href="https://2020.spaceappschallenge.org/challenges/confront/flood-ideas/teams/coastbusters/project"
               target="blank"
