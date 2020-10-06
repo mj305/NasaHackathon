@@ -14,7 +14,7 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 
 
 ## NASA International Space Apps Challenge
-- [The NASA Project Website:](https://2020.spaceappschallenge.org/challenges/confront/flood-ideas/teams/coastbusters/project)
+- [The NASA Project Website](https://2020.spaceappschallenge.org/challenges/confront/flood-ideas/teams/coastbusters/project)
 - Data Provided by NASA
 
 
