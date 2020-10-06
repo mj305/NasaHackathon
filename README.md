@@ -1,4 +1,4 @@
-# NASA International Space Apps Challenge
+# NASA International Space Apps Challenge 2020
 # Team Coast Busters
 
 ## The Challenge
