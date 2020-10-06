@@ -9,7 +9,6 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 ## Technologies used
 - React
 - React-Simple-Maps
-- Material UI 
 - SASS
 
 
