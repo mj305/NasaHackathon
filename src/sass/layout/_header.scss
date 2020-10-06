@@ -54,3 +54,14 @@
     margin-top: 2rem;
   }
 }
+
+@media screen and (max-width: #{$cell-sideway}) {
+  .heading-primary--main {
+    font-size: 2rem;
+    letter-spacing: 2.6rem;
+  }
+
+  .heading-primary--sub {
+    font-size: 1.4rem;
+  }
+}
