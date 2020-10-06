@@ -1,4 +1,5 @@
-# Coast Busters  -  React App
+# NASA International Space Apps Challenge
+# Team Coast Busters
 
 ## The Challenge
 Your challenge is to develop a new methodology or algorithm that leverages Earth observation and critical infrastructure datasets to estimate damages to infrastructure caused by flooding. Make a measurable impact on the resilience of nations by helping the Earth observations community contribute to the United Nations’ primary effort to reduce disaster risk!
