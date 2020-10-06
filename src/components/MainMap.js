@@ -12,7 +12,7 @@ const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const MapChart = ({ setTooltipContent }) => {
-  const result = waterLevelData.features.map((value) => {
+  const result = waterLevelData.features.slice(0, 5).map((value) => {
     return (
       <>
         <div> {value.properties.catchmentName} </div>
