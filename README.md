@@ -23,7 +23,7 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 - Open http://localhost:3000 to view in the browser.
 
 ## Setup React Simple Maps
--[React Simple Maps Docs](https://www.react-simple-maps.io/)
+- [React Simple Maps Docs](https://www.react-simple-maps.io/)
 - npm i -S react-simple-maps
 
 
