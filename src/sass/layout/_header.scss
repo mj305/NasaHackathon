@@ -32,3 +32,22 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media screen and (max-width: #{$cell-width}) {
+  .heading-primary--main {
+    font-size: 2rem;
+    letter-spacing: 2.4rem;
+  }
+
+  .heading-primary--sub {
+    font-size: 1.2rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -31px;
+  }
+}
