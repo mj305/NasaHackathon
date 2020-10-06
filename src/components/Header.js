@@ -32,7 +32,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="col-1-of-3">
+          <div className="project col-1-of-3">
             <a
               href="https://2020.spaceappschallenge.org/challenges/confront/flood-ideas/teams/coastbusters/project"
               target="blank"

@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-1-of-6">
+          <div className="venu col-1-of-6">
             Venu
             <div>
               <a href="https://www.linkedin.com/in/svenus" target="blank">
