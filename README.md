@@ -28,6 +28,3 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 - npm i -S react-simple-maps
 
 
-## Deployment
-- Netlify 
-
