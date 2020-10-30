@@ -6,12 +6,14 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 
  [Find the Coast Busters APP Here](https://coastbusters.netlify.app)
 
-
 ## Technologies used
 - React
 - React-Simple-Maps
 - SASS
 
+## Setup React Simple Maps
+- [React Simple Maps Docs](https://www.react-simple-maps.io/)
+- npm i -S react-simple-maps
 
 ## NASA International Space Apps Challenge
 - [The NASA Project Website](https://2020.spaceappschallenge.org/challenges/confront/flood-ideas/teams/coastbusters/project)
@@ -23,8 +25,6 @@ Your challenge is to develop a new methodology or algorithm that leverages Earth
 - npm start
 - Open http://localhost:3000 to view in the browser.
 
-## Setup React Simple Maps
-- [React Simple Maps Docs](https://www.react-simple-maps.io/)
-- npm i -S react-simple-maps
+
 
 
