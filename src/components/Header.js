@@ -7,7 +7,6 @@ const Header = () => {
       <div className="header__text-box">
         <h1 className="heading-primary">
           <span className="heading-primary--main">Coast Busters</span>
-          <span className="heading-primary--sub">Flood Of Ideas</span>
         </h1>
 
         <div className="row">
